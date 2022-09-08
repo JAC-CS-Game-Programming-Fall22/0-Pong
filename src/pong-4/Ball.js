@@ -1,4 +1,4 @@
-import { generateRandomNumber } from './utils.js';
+import { generateRandomNumber } from './utilities.js';
 
 export default class Ball {
 	/**
@@ -35,7 +35,7 @@ export default class Ball {
 	}
 
 	/**
-	 * Update our ball based on its DX and DY only if we're in play state;
+	 * Update our paddle based on its DX and DY only if we're in play state;
 	 * scale the velocity by dt so movement is framerate-independent.
 	 *
 	 * @param {Number} dt Time since the last frame.

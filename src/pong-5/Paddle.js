@@ -7,7 +7,7 @@ export default class Paddle {
 	 * @param {Number} y The paddle's Y coordinate.
 	 * @param {Number} width The paddle's width.
 	 * @param {Number} height The paddle's height.
-	 * @param {*} canvasHeight The height of the canvas.
+	 * @param {Number} canvasHeight The height of the canvas.
 	 */
 	constructor(x, y, width, height, canvasHeight) {
 		this.x = x;
@@ -32,7 +32,7 @@ export default class Paddle {
 	}
 
 	/**
-	 * Update our ball based on its DX and DY only if we're in play state;
+	 * Update our paddle based on its DX and DY only if we're in play state;
 	 * scale the velocity by dt so movement is framerate-independent.
 	 *
 	 * @param {Number} dt Time since the last frame.
@@ -59,7 +59,7 @@ export default class Paddle {
 	}
 
 	/**
-	 * Draw the ball to the screen.
+	 * Draw the paddle to the screen.
 	 *
 	 * @param {CanvasRenderingContext2D} context
 	 */
